@@ -20,13 +20,20 @@
 
     <properties>
         <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
+        <eureka-client.version>2.2.3.RELEASE</eureka-client.version>
+        <nimbus-jose.version>8.19</nimbus-jose.version>
     </properties>
 
     <dependencies>
         <dependency>
+            <groupId>com.nimbusds</groupId>
+            <artifactId>nimbus-jose-jwt</artifactId>
+            <version>${nimbus-jose.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>2.2.3.RELEASE</version>
+            <version>${eureka-client.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
